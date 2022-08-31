@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="mt-5">
+<div class="row">
+    <div class="col-4">
+        <p> Me</p>
+    </div>
+    <div class="col-4">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <div>
+                <img src="{{url_for('static',filename = 'images/josh.jpg')}}" alt="profile image" class="rounded-circle profile-img" width="10%">
+                &nbsp;
+              <h5 class="card-title" style="display:inline;">Joshua Mulonga </h5>
+              &nbsp;
+              <p style="padding-left: 15%; "><small>31-Aug-2022</small></p> 
+            </div>
+              <hr>
+                <img src="{{url_for('static',filename = 'images/josh.jpg') }}" style="width: 100%">
+
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <hr>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+    </div>
+    <div class="col-4">
+        <p>Me</p>
+    </div>
+</div>
+</div>
+
+{% endblock %}
